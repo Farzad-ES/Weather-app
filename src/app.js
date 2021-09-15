@@ -72,7 +72,8 @@ app.get('/weather', (req,res)=>{
                 Longitude:long,
                 Forecast:currentWeather.weather_descriptions[0],
                 Current_temperature:currentWeather.temperature,
-                Feels_like_temperature:currentWeather.feelslike
+                Feels_like_temperature:currentWeather.feelslike,
+                Humidity:currentWeather.humidity
             })
         })
     })
